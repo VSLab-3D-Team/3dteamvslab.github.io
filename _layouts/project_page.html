@@ -47,21 +47,36 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">{{ page.title }}</h1>
-          {% if page.authors %}
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              {{ page.authors }}
+              <a href="https://github.com/kimh060612">GiHyeon Kim</a><sup>1*</sup>,</span>
+            <span class="author-block">
+              <a href="https://google.com">KunHo Heo</a><sup>1*</sup>,</span>
+            <span class="author-block">
+              <a href="https://google.com">SuYeon Kim</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://myeongahcho.netlify.app/">MyeongAh Cho</a><sup>1</sup>,
             </span>
           </div>
-          {% endif %}
 
           {% if page.affiliations %}
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              {{ page.affiliations }}
+              <sup>1</sup>{{ page.affiliations }}
             </span>
           </div>
           {% endif %}
+          
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <sup>*</sup>Equal Contribution
+            </span>
+          </div>
+
+          <div style="color: red; padding: 10px 0;">
+            <h2 style="margin: 0; font-weight: normal;">🎉 NeurIPS 2025 Poster Presentation</h2>
+          </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
@@ -90,26 +105,37 @@
               </span>
               {% endif %}
               <!-- Code Link. -->
-              {% if page.code %}
+              {% if page.main_code %}
               <span class="link-block">
-                <a href="{{ page.code }}"
+                <a href="{{ page.main_code }}"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code</span>
+                  <span>Scene Graph Code</span>
                   </a>
               </span>
               {% endif %}
-              <!-- Dataset Link. -->
-              {% if page.data %}
+              {% if page.obj_code %}
               <span class="link-block">
-                <a href="{{ page.data }}"
+                <a href="{{ page.obj_code }}"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Object Encoder Code</span>
+                  </a>
+              </span>
+              {% endif %}
+              <!-- Checkpoint Link. -->
+              {% if page.checkpoints %}
+              <span class="link-block">
+                <a href="{{ page.checkpoints }}"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-database"></i>
                   </span>
-                  <span>Data</span>
+                  <span>Checkpoint</span>
                 </a>
               </span>
               {% endif %}
