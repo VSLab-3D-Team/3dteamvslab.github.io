@@ -74,9 +74,9 @@ Qualitative comparison between baseline(VL-SAT) and ours: VL-SAT frequently misc
 
 ## Object Feature Representation
 
-<p align="center">
-  <img src="/static/image/figure6.png" width="80%" alt="Teaser Figure">
-</p>
+<div style="text-align: center;">
+  <img src="/static/image/figure6.png" width="80%" alt="figure6">
+</div>
 
 We visualize the learned object embedding space using t-SNE for the ten most frequent object categories in the dataset. Compared to baseline(VL-SAT), our approach yields more compact and well-separated clusters, particularly for structurally similar object pairs such as *ceiling–floor*, *wall–door*, and *curtain–window*. These results suggest that our object encoder learns more discriminative features, which provide a semantically stronger foundation for subsequent relationship classification
 
