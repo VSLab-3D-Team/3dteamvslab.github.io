@@ -27,14 +27,14 @@ scores and more accurate object classifications. Consequently, relationship pred
     </div>
 </div>
 
-<div class="columns is-centered has-text-centered">
+<!-- <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
     <h2 class="title is-3">Video (나중에 대체)</h2>
     <div class="publication-video">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/uOcGY30gyWo?si=kHtYxoPXDGX9fHxK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
     </div>
-</div>
+</div> -->
 
 ---
 
